@@ -11,7 +11,7 @@ Welcome to the System Zero engineering coding test! This project evaluates your 
 
 ## What You Will Be Doing?
 
-During this 60-90 minute technical interview, you will:
+During this 45-60 minute technical interview, you will:
 
 1. Implement specific features in a pair programming session with the interviewer
 2. Work on integrating LLM capabilities into an existing NestJS application
