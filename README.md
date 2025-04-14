@@ -1,6 +1,6 @@
-# System Zero Engineering Challenge
+# System Zero Engineering Coding Test
 
-Welcome to the System Zero engineering challenge! This project evaluates your engineering approach, system design decisions, and code quality through focused implementation tasks.
+Welcome to the System Zero engineering coding test! This project evaluates your engineering approach, system design decisions, and code quality through focused implementation tasks.
 
 ## Important Notes
 
@@ -8,6 +8,31 @@ Welcome to the System Zero engineering challenge! This project evaluates your en
 - Pre-coding before the interview is not permitted
 - You may explore the codebase after receiving access
 - The goal is to understand your engineering thought process and decision-making
+
+## What You Will Be Doing?
+
+During this 60-90 minute technical interview, you will:
+
+1. Implement specific features in a pair programming session with the interviewer
+2. Work on integrating LLM capabilities into an existing NestJS application
+3. Handle streaming data and build API endpoints
+4. Make architectural and design decisions along the way
+
+Important Guidelines:
+- Clearly communicate your thought process and reasoning behind technical decisions
+- Feel free to ask questions and discuss approaches with the interviewer
+- The interviewer will provide guidance if needed and may ask questions about your choices
+- This is meant to be collaborative - treat it as working with a colleague
+
+The interviewer will act as both an observer and a helpful resource. They will:
+- Guide you through the requirements
+- Answer any questions you have
+- Provide technical assistance if needed
+- Ask questions about your implementation choices
+- Help keep track of time and scope
+
+Remember: The goal is not just to complete the tasks, but to demonstrate your problem-solving approach, communication skills, and engineering mindset. Take your time to explain your decisions and don't hesitate to think out loud.
+
 
 ## What We Evaluate
 
