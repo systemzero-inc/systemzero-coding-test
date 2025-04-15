@@ -33,7 +33,6 @@ The interviewer will act as both an observer and a helpful resource. They will:
 
 Remember: The goal is not just to complete the tasks, but to demonstrate your problem-solving approach, communication skills, and engineering mindset. Take your time to explain your decisions and don't hesitate to think out loud.
 
-
 ## What We Evaluate
 
 - Clean, maintainable code structure
@@ -49,53 +48,65 @@ During the interview, you'll work on specific implementation tasks focusing on:
 - Database modeling
 - Testing strategies
 
-## Setup Instructions
+## Getting Started
+
+To run the project in development mode, follow these steps:
 
 ### Prerequisites
 - Node.js ~v23
 - Docker and Docker Compose
 - pnpm (recommended) or npm
 
-### Database Setup
+### Setup Database
+The project uses PostgreSQL running in Docker. Start it with:
 
-1. Start the PostgreSQL database using Docker:
-   ```bash
-   docker-compose up -d db
-   ```
+```ssh
+docker-compose up -d
+```
 
-2. Create a `.env` file in the root directory with the following variables:
-   ```
-   DATABASE_URL=postgresql://postgres:postgres@localhost:5432/systemzero
-   OPENAI_API_KEY='You will receive an api key'
-   ```
+### Setup API
+To setup the API, run
 
-3. Install dependencies:
-   ```bash
-   pnpm install
-   ```
+```sh
+pnpm i
+```
 
-4. Run database migrations:
-   ```bash
-   pnpm prisma migrate dev
-   ```
+```sh
+pnpm prisma generate
+```
 
-5. Seed the database (optional):
-   ```bash
-   pnpm prisma db seed
-   ```
+In the /api folder create a .env file with the following content:
+```sh
+DATABASE_URL=postgresql://root:root@localhost:5432/systemzero?schema=public
+OPENAI_API_KEY=<INSERT_API_KEY_SHARED_BY_SZ_TEAM>
+```
 
-6. Start the development server:
-   ```bash
-   pnpm dev
-   ```
+Run a database migration
+```sh
+pnpm dlx prisma migrate dev --name your_migration_name
+``` 
 
-The application should now be running at `http://localhost:3000`
+To start the API server, run
+```sh
+pnpm start:dev
+```
 
-### Troubleshooting
+### Setup APP
+To setup the APP, run 
 
-If you encounter any database connection issues:
-- Ensure you have received an OPENAI_API_KEY 
-- Ensure Docker is running
-- Check that port 5432 is not in use
-- Verify your .env configuration matches the docker-compose settings
+```sh
+pnpm i
+```
 
+```sh
+pnpm dev
+```
+
+## Evaluation Criteria
+
+You'll be evaluated on:
+- Code quality and organization
+- System design decisions
+- Error handling and edge cases
+- Documentation and clarity
+- Performance considerations
